@@ -1,3 +1,22 @@
-h1 {
-    color: red;
+/* Desktop styling import
+----------------------------------------------------*/
+@import "variables/variables.css";
+
+/* Desktop styling import
+----------------------------------------------------*/
+@import "elements/elements.css";
+
+/* Mobile styling import
+----------------------------------------------------*/
+@import "mobile.css" screen and (max-width: 768px);
+
+/* Desktop styling import
+----------------------------------------------------*/
+@import "desktop.css" screen and (min-width: 768px);
+
+/* Default styling styling
+----------------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
 }

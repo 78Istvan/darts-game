@@ -1,0 +1,1 @@
+This is a one page darts game scoreboard application

@@ -1,0 +1,22 @@
+:root {
+
+    /* Theme colours */
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+    --creme: #eae0c2;
+    --dark: #1c1b18;
+
+    /* Theme spaces */
+    --xsmall: 5px;
+    --small: 10px;
+    --medium: 20px;
+    --large: 40px;
+    --xlarge:50px;
+
+    /* Font sizes */
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-large: 26px;
+    --font-xlarge: 35px;
+}

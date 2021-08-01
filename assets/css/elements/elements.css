@@ -1,0 +1,26 @@
+button {
+    width: 100%;
+    display: block;
+    box-shadow: 0 1px 0 0 var(--dark);
+    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    background-color: var(--creme);
+    border-radius:15px;
+    border:2px solid #333029;
+    cursor:pointer;
+    color:#505739;
+    font-size:14px;
+    font-weight:bold;
+    padding:12px 76px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #ffffff;
+    margin: var(--medium) 0;
+}
+
+button:hover {
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    background-color:#ccc2a6;
+}
+button:active {
+    position:relative;
+    top:1px;
+}
