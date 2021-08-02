@@ -38,5 +38,33 @@ requirejs([
             $( "#dialog-single-player" ).dialog( "open" );
         });
     } );
-});
 
+
+$( function() {
+    $( "#dialog-multi-player" ).dialog({
+        buttons: [
+            {
+                text: "Start Game",
+                click: function() {
+                    $( this ).dialog( "close" );
+                }
+            }
+        ],
+        closeText: "Back",
+        title: "Chose a game",
+        autoOpen: false,
+        show: {
+            effect: "blind",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        }
+    });
+
+    $( "#multi-player" ).on( "click", function() {
+        $( "#dialog-multi-player" ).dialog( "open" );
+    });
+} );
+});
