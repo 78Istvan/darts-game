@@ -1,7 +1,10 @@
-
+/*----------------------------------------
+    mobile.css mobile styling
+----------------------------------------*/
 body {
     background-image: url(../images/dartbackground-1.jpg);
 }
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -16,4 +19,25 @@ body {
     max-width: 90%;
     width: 100%;
     margin: 0 auto;
+}
+
+/* Content styling
+----------------------------------------*/
+.content__level-2--single-player {
+    display: none;
+}
+
+.content__level-2--multi-player {
+    display: none;
+}
+
+/* Game form styling
+------------------------------------------*/
+.game-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: var(--medium) 0;
 }
