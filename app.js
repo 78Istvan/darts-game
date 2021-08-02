@@ -9,7 +9,8 @@ requirejs.config({
         app: '../app',
         darts: 'modules/darts',
         localStorage: 'modules/local-storage',
-        jquery: 'jquery'
+        jquery: 'jquery',
+        jqueryUi: 'jquery-ui.min.js'
     }
 });
 
