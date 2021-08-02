@@ -11,6 +11,5 @@ define(function () {
         getItem: function (key) {
             return localStorage.getItem(key);
         }
-        //@ sourceURL=local-storage.js
     };
 });

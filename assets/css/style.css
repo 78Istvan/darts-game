@@ -1,3 +1,7 @@
+/*------------------------------------------------------------------
+    style.css Setting up the styling logic and collecting css files
+--------------------------------------------------------------------*/
+
 /* Desktop styling import
 ----------------------------------------------------*/
 @import "variables/variables.css";
@@ -14,9 +18,23 @@
 ----------------------------------------------------*/
 @import "desktop.css" screen and (min-width: 768px);
 
+/* Desktop styling import
+----------------------------------------------------*/
+@import "jquery-ui.min.css" screen and (min-width: 768px);
+
 /* Default styling styling
 ----------------------------------------------------*/
 html, body {
     height: 100%;
     margin: 0;
+}
+
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+.ui-dialog {
+    background: var(--transparent-blue);
+    padding: 10px;
+    color: var(--white);
 }

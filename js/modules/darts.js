@@ -1,7 +1,8 @@
 requirejs([
     "modules/local-storage",
     "jquery",
-    "underscore"
+    "underscore",
+    "jquery-ui.min"
 ], function(localStorage, $, _) {
     //This function is called when scripts/helper/util.js is loaded.
     //If util.js calls define(), then this function is not fired until
@@ -10,11 +11,32 @@ requirejs([
 
     'use strict'
 
-    console.log('darts.js loaded');
-    console.log(localStorage.getHello());
+    $( function() {
+        $( "#dialog-single-player" ).dialog({
+            buttons: [
+                {
+                    text: "Start Game",
+                    click: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            ],
+            closeText: "Back",
+            title: "Chose a game",
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 500
+            },
+            hide: {
+                effect: "explode",
+                duration: 500
+            }
+        });
 
-    localStorage.setItem('test-key', 'test value')
-
-    $('.footer').text(localStorage.getItem('test-key'));
+        $( "#single-player" ).on( "click", function() {
+            $( "#dialog-single-player" ).dialog( "open" );
+        });
+    } );
 });
 

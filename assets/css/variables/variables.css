@@ -1,11 +1,13 @@
 :root {
 
     /* Theme colours */
-    --blue: #1e90ff;
+    --blue: #08033b;
+    --transparent-blue: rgba(8, 3, 59, 0.8);
     --white: #ffffff;
     --black: #000000;
     --creme: #eae0c2;
     --dark: #1c1b18;
+
 
     /* Theme spaces */
     --xsmall: 5px;
