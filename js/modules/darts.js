@@ -6,7 +6,6 @@ requirejs([
     "modules/dialog"
 ], function(localStorage, $, _) {
     'use strict'
-
+  
     console.log('dart.js loaded');
 });
-
